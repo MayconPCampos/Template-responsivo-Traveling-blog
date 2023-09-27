@@ -10,7 +10,9 @@
 }
 
 body{
-    background-color: #ececec;
+    background-color: #f1f1f1;
+    font-family: "raleway";
+    color: #3d3d3d;
 }
 
 img{
@@ -64,6 +66,48 @@ img{
             grid-row: 7 / 8;
         }
 
+
+    /* cabeçalho */
+
+        #nav-bar{
+            background-color: white;
+            display: flex;
+            padding: 4%;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        .brand{
+            font-size: .7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .nav-list{
+            display: none;
+        }
+
+        #header{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.6;
+            margin: 15% 10%;
+        }
+
+        #header img{
+            width: 35%;
+        }
+
+        #header h1{
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 4%;
+        }
+
+        #header p{
+            font-size: .7rem;
+        }
 
 
 /* tablet - máx 768px */
