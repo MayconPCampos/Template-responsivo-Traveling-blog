@@ -1,9 +1,69 @@
+@font-face {
+    font-family: "raleway";
+    src: url(../fonts/static/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(../fonts/static/Raleway-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+body{
+    background-color: #ececec;
+}
+
+img{
+    max-width: 100%;
+}
+
+
 
 /* mobile - máx 480px */
 
-    body{
-        background-color: #ececec;
-    }
+
+    /* grid */
+
+        #main-container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        #nav-bar{
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+        }
+
+        #header{
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+        }
+
+        #main-post{
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;
+        }
+
+        #cards{
+            grid-column: 1 / -1;
+            grid-row: 4 / 5;
+        }
+
+        #post-list{
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+        }
+
+        #about{
+            grid-column: 1 / -1;
+            grid-row: 6 / 7;
+        }
+
+        #footer{
+            grid-column: 1 / -1;
+            grid-row: 7 / 8;
+        }
+
 
 
 /* tablet - máx 768px */
@@ -11,11 +71,51 @@
     @media screen and (min-width: 480px) {}
 
 
+
 /* laptop - máx 1024px */
 
     @media screen and (min-width: 768px) {}
 
 
+
 /* desktop - acima de 1024px */
     
-    @media screen and (min-width: 1024px) {}
+    @media screen and (min-width: 1024px) {
+
+        /* grid */
+
+        #nav-bar{
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+        }
+
+        #header{
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        #main-post{
+            grid-column: 4 / -1;
+            grid-row: 2 / 8;
+        }
+
+        #cards{
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+        }
+
+        #post-list{
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+        }
+
+        #about{
+            grid-column: 1 / 4;
+            grid-row: 6 / 7;
+        }
+
+        #footer{
+            grid-column: 1 / 4;
+            grid-row: 7 / 8;
+        }
+    }
