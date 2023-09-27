@@ -1,0 +1,21 @@
+
+/* mobile - máx 480px */
+
+    body{
+        background-color: #ececec;
+    }
+
+
+/* tablet - máx 768px */
+
+    @media screen and (min-width: 480px) {}
+
+
+/* laptop - máx 1024px */
+
+    @media screen and (min-width: 768px) {}
+
+
+/* desktop - acima de 1024px */
+    
+    @media screen and (min-width: 1024px) {}
