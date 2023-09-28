@@ -179,6 +179,11 @@ img{
             padding: 5% 10%;
             text-align: center;
             margin: 5%;
+            transition: color .5s
+        }
+
+        .btn:hover{
+            color: #19a582;
         }
 
         .post-bottom{
@@ -213,6 +218,144 @@ img{
             font-size: .7rem;
             text-decoration: none;
         }
+
+
+    /* cards */
+
+        #cards{
+            border-top: 1px solid #d8d8d8;
+            margin: 5%;
+        }
+
+        .card{
+            background-color: #ffffff;
+            margin-top: 10%;
+            border: 1px solid #d8d8d8;
+        }
+
+        .card-info{
+            display: flex;
+            align-items: center;
+            padding: 5%;
+        }
+  
+        .card-title{
+            font-weight: bold;
+            font-size: .7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: none;
+            color: #3d3d3d;
+           transition: color .5s;
+        }
+
+
+        .card-title:hover{
+            color: #19a582;
+        }
+
+        .card-user_image{
+            width: 12%;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+
+    /* Lista de postagens */
+
+        #post-list{
+            border-top: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            margin: 5%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .list{
+            margin: 5% 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .list div{
+            margin: 5% 0 5% 5%;
+            
+        }
+
+        .list img{
+            width: 20%;
+        }
+
+        .list-title{
+            font-weight: bold;
+            font-size: .6rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2%;
+            line-height: 1.5;
+            text-decoration: none;
+            color: #3d3d3d;
+            transition: color .5s;
+        }
+
+        .list-title:hover{
+            color: #19a582;
+        }
+
+        .list-date{
+            font-size: .9rem;
+        }
+
+
+    /* Sobre */
+
+        #about{
+            margin: 5%;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        #about h2{
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: .8rem;
+            margin-bottom: 5%;
+        }
+
+        #about p{
+            line-height: 1.5;
+        }
+
+        #about .btn{
+            margin: 10% 0;
+        }
+
+        
+    /* Rodapé */
+
+        #footer{
+            margin: 5% 5% 10%;
+            text-align: center;
+        }
+
+        #footer ul{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5%;
+        }
+
+        #footer .ico{
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+        }
+
+        #footer p{
+            margin: 10% 0;
+            color: #b4b4b4;
+            font-size: .8rem;
+        }
+
 
 /* tablet - máx 768px */
 
