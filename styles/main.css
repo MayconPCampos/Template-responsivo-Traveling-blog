@@ -327,6 +327,8 @@ img{
 
         #about p{
             line-height: 1.5;
+            letter-spacing: 2px;
+            font-size: .9rem;
         }
 
         #about .btn{
@@ -480,6 +482,34 @@ img{
             .list{
                 margin-top: 2%;
                 margin-bottom: 2%;
+            }
+        
+        /* Sobre */
+
+            #about{
+                margin: 5% 7%;
+            }
+
+            #about .btn{
+                display: inline-block;
+                padding: 3% 8%;
+                margin-top: 6%;
+                margin-bottom: 9%;
+            }
+
+        /* Rodapé */
+
+            #footer{
+                text-align: left;
+                margin: 0 7%;
+            }
+
+            #footer ul{
+                justify-content: left;
+            }
+
+            #footer p{
+                margin-top: 0;
             }
     }
 
