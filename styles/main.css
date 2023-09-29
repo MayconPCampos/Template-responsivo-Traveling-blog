@@ -282,7 +282,6 @@ img{
 
         .list div{
             margin: 5% 0 5% 5%;
-            
         }
 
         .list img{
@@ -307,6 +306,7 @@ img{
 
         .list-date{
             font-size: .9rem;
+            margin-top: 2%;
         }
 
 
@@ -390,11 +390,12 @@ img{
 
             .post-header{
                 margin-top: 10%;
+                
             }
 
             .post-header h2{
                 font-size: 1.7rem;
-                margin: 7% 7% 3%;
+                margin: 5% 7% 3% 0;
                 line-height: 1.3;
             }
 
@@ -447,7 +448,7 @@ img{
 
             .page-buttons{
                 display: flex;
-                margin-left: 7%;
+                margin-left: 6%;
             }
 
             .page-buttons .btn{
@@ -469,14 +470,14 @@ img{
                 grid-template-columns: repeat(2, 1fr);
                 gap: 5%;
                 padding-top: 3%;
-                margin: 7%;
+                margin: 6%;
             }
 
             
         /* Lista de postagens */
 
             #post-list{
-                margin: 5% 7%;
+                margin: 5% 6%;
             }
 
             .list{
@@ -487,7 +488,7 @@ img{
         /* Sobre */
 
             #about{
-                margin: 5% 7%;
+                margin: 5% 6%;
             }
 
             #about .btn{
@@ -501,7 +502,7 @@ img{
 
             #footer{
                 text-align: left;
-                margin: 0 7%;
+                margin: 0 6%;
             }
 
             #footer ul{
@@ -515,50 +516,279 @@ img{
 
 
 
-/* laptop - máx 1024px */
+/* laptop - máx 1280px */
 
-    @media screen and (min-width: 768px) {}
+    @media screen and (min-width: 768px) {
+
+        /* cabeçalho */
+
+            #nav-bar{
+                padding: 2.5%;
+            }
+
+            #header{
+                margin: 0 12%;
+            }
+
+        /* Postagens principais */
+
+            #main-post{
+                margin: 0 6%;
+            }
+
+            .post{
+                border: 1px solid #d8d8d8;
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+            }
+
+            .post-header{
+                grid-column: 1 / 8;
+                grid-row: 1 / 2;
+                margin: 0 2%;
+                padding: 5%;
+            }
+
+            .post-header h2{
+                margin-top: 5%;
+            }
+
+            .post-info{
+                grid-column: 8 / 11;
+                grid-row: 1 / 2;
+                border-left: 1px solid #d8d8d8;
+                margin: 0;
+                padding: 20% 10%;
+                display: grid;
+                gap: 5%;
+                text-align: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .post-date{
+                border: none;
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+                font-size: .8rem;
+            }
+
+            .post-user_name{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                margin-left: 25%;
+                margin-right: 5%;
+                padding-bottom: 3px;
+                border-bottom: 1px dotted #d8d8d8;
+                width: fit-content;
+            }
+
+            .post-user_image{
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+               
+            }
+
+            .post-img{
+                padding: 5%;
+            }
+
+            .post-content{
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+            }
+
+            .post-text{
+                margin: 0 5%;
+            }
+
+            .post-bottom{
+                grid-column: 1 / -1;
+                grid-row: 3 / 4;
+                margin: 0;
+            }
+
+            .post-bottom .btn{
+                padding: 2% 6%;
+            }
+
+            .page-buttons{
+                margin: 0;
+            }
+
+            .page-buttons .btn{
+                padding: 2% 6%;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        /* Cards */
+
+            #cards{
+                padding-top: 1%;
+                row-gap: 1%;;
+            }
+
+
+        /* Cards */
+
+            #cards{
+                margin: 5% 6%;
+            }
+
+        /* Lista de postagens */
+
+            #post-list{
+                margin: 1% 6%;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+        /* Sobre */
+
+            #about{
+                margin: 4% 6%;
+            }
+
+            #about h2{
+                margin-bottom: 3%;
+            }
+
+            #about .btn{
+                margin-top: 4%;
+                margin-bottom: 6%;
+                padding: 2% 6%;
+            }
+
+        /* Rodapé */
+
+            #footer{
+                margin-left: 6%;
+            }
+
+            #footer ul{
+                margin-bottom: 3%;
+            }
+    }
 
 
 
-/* desktop - acima de 1024px */
+/* desktop - acima de 1280px */
     
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1280px) {
 
-        /* grid */
+        /* Cabeçalho */
 
-        #nav-bar{
-            grid-column: 1 / -1;
-            grid-row: 1 / 2;
-        }
+            #nav-bar{
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+                padding: 1.3%;
+            }
 
-        #header{
-            grid-column: 1 / 4;
-            grid-row: 2 / 3;
-        }
+            .brand{
+                font-size: .8rem;
+            }
 
-        #main-post{
-            grid-column: 4 / -1;
-            grid-row: 2 / 8;
-        }
+            #header{
+                grid-column: 1 / 5;
+                grid-row: 2 / 3;
+                margin-top: 15%;
+                margin-left: 29%;
+                text-align: start;
+                padding-left: 0;
+                padding-top: 0;
+            }
 
-        #cards{
-            grid-column: 1 / 4;
-            grid-row: 4 / 5;
-        }
+            #header img{
+                margin-bottom: 5%;
+                padding-top: 2%;
+            }
 
-        #post-list{
-            grid-column: 1 / 4;
-            grid-row: 5 / 6;
-        }
+            #header h1{
+                font-size: 2.5rem;
+                line-height: 1.2;
+                font-weight: bold;
+                margin-bottom: 5%;
+            }
 
-        #about{
-            grid-column: 1 / 4;
-            grid-row: 6 / 7;
-        }
+            #header p{
+                font-size: 1rem;
+                line-height: 2;
+            }
 
-        #footer{
-            grid-column: 1 / 4;
-            grid-row: 7 / 8;
-        }
+        /* Postagens principais */
+
+            #main-post{
+                grid-column: 5 / -1;
+                grid-row: 2 / 8;
+                margin-top: 7%;
+                margin-right: 14%;
+                margin-left: 1.5%;
+                margin-bottom: 15%;
+            }
+
+            .post-header{
+                text-align: start;
+                margin-top: 1%;
+                margin-bottom: 4%;
+            }
+
+            .post-header h2{
+                font-size: 2rem;
+                margin-left: 0;
+            }
+
+            .post-header p{
+                font-size: .8rem;
+            }
+
+        /* Cards */
+
+            #cards{
+                grid-column: 1 / 5;
+                grid-row: 3 / 4;
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                margin-left: 29%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+
+        /* Lista de postagens */
+
+            #post-list{
+                grid-column: 1 / 5;
+                grid-row: 4 / 5;
+                margin-left: 29%;
+            }
+
+            .list{
+                padding-top: 9%;
+                padding-bottom: 9%;
+            }
+
+            .list img{
+                max-width: 80px;
+            }
+
+            .list-title{
+                font-size: .8rem;
+            }
+
+        /* Sobre */
+
+            #about{
+                grid-column: 1 / 5;
+                grid-row: 5 / 6;
+                margin-left: 29%;
+                margin-top: 9%;
+            }
+
+        /* Rodapé */
+
+            #footer{
+                grid-column: 1 / 5;
+                grid-row: 6 / 7;
+                margin-left: 29%;
+            }
     }
