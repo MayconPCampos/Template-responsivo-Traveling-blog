@@ -71,7 +71,7 @@ img{
         #nav-bar{
             background-color: #ffffff;
             display: flex;
-            padding: 4%;
+            /* padding: 4%; */
             border-bottom: 1px solid #d8d8d8;
         }
         
@@ -80,10 +80,21 @@ img{
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 4px;
+            margin: auto;
+            margin-left: 3%;
         }
 
         .nav-list{
             display: none;
+        }
+
+        .menu-bar{
+            width: 5%;
+            margin: 0;
+            padding: 3% 5%;
+            margin-left: auto;
+            border-left: 1px solid #d8d8d8;
+            cursor:pointer;
         }
 
         #header{
@@ -101,6 +112,7 @@ img{
         #header h1{
             font-size: 1.9rem;
             margin-bottom: 1%;
+            font-weight: bold;
         }
 
         #header p{
@@ -123,6 +135,16 @@ img{
             text-align: center;
             line-height: 1.9;
             margin: 15% 5% 5%;
+        }
+
+        .post-header a{
+            text-decoration: none;
+            color: #3d3d3d;
+            transition: color .3s;
+        }
+
+        .post-header a:hover{
+            color: #4cbda1;
         }
 
         .post-header h2{
@@ -230,6 +252,15 @@ img{
             background-color: #ffffff;
             margin-top: 10%;
             border: 1px solid #d8d8d8;
+            overflow: hidden;
+        }
+
+        .card img:nth-child(1){
+            transition: all .5s;
+        }
+
+        .card img:nth-child(1):hover{
+            transform: scale(1.03);
         }
 
         .card-info{
@@ -245,7 +276,14 @@ img{
             letter-spacing: 3px;
             text-decoration: none;
             color: #3d3d3d;
-           transition: color .5s;
+            transition: color .5s;
+        }
+
+        .card-date{
+            margin-top: 3%;
+            letter-spacing: 2px;
+            font-size: .7rem;
+            text-transform: uppercase;
         }
 
         .card-title:hover{
@@ -254,7 +292,7 @@ img{
 
         .card-user_image{
             width: 12%;
-            margin: auto;
+            margin-left: auto;
             border-radius: 50%;
         }
 
@@ -305,8 +343,10 @@ img{
         }
 
         .list-date{
-            font-size: .9rem;
-            margin-top: 2%;
+            margin-top: 3%;
+            letter-spacing: 2px;
+            font-size: .7rem;
+            text-transform: uppercase;
         }
 
 
@@ -373,6 +413,39 @@ img{
                 padding: 3%;
             }
 
+            .nav-list{
+                display: flex;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: .7rem;
+                gap: 5%;
+                margin-top: 1px;
+                margin-right: 5%;
+                margin-left: auto;
+                color: #3d3d3d;
+            }
+
+            .nav-list li{
+                border-right: 1px solid #d8d8d8;
+                padding-right: 8px;
+            }
+
+            .nav-list li:nth-last-child(1){
+                border: none;
+            }
+
+            .nav-list li a{
+                text-decoration: none;
+            }
+
+            .nav-list li a:hover{
+                color: #19a582;
+            }
+
+            .menu-bar{
+                display: none;
+            }
+
             #header h1{
                 font-size: 2.1rem;
             }
@@ -395,13 +468,13 @@ img{
 
             .post-header h2{
                 font-size: 1.7rem;
-                margin: 5% 7% 3% 0;
+                margin: 3% 7% 3% 0;
                 line-height: 1.3;
             }
 
             .post-date{
                 border-right: 1px solid #d8d8d8;
-                padding: 10px 20px;
+                padding: 10px 20px 0px;
             }
 
             .post-info{
@@ -526,6 +599,11 @@ img{
                 padding: 2.5%;
             }
 
+            .nav-list{
+                margin-right: 7%;
+                font-size: .7rem;
+            }
+
             #header{
                 margin: 0 12%;
             }
@@ -545,8 +623,8 @@ img{
             .post-header{
                 grid-column: 1 / 8;
                 grid-row: 1 / 2;
-                margin: 0 2%;
-                padding: 5%;
+                margin: 5% 0 8%;
+                padding-left: 7%;
             }
 
             .post-header h2{
@@ -558,34 +636,27 @@ img{
                 grid-row: 1 / 2;
                 border-left: 1px solid #d8d8d8;
                 margin: 0;
-                padding: 20% 10%;
-                display: grid;
+                padding: 15% 10%;
+                display: flex;
+                flex-direction: column;
                 gap: 5%;
                 text-align: center;
-                grid-template-columns: repeat(2, 1fr);
             }
 
             .post-date{
                 border: none;
-                grid-column: 1 / -1;
-                grid-row: 1 / 2;
                 font-size: .8rem;
             }
 
             .post-user_name{
-                grid-column: 1 / 2;
-                grid-row: 2 / 3;
-                margin-left: 25%;
-                margin-right: 5%;
                 padding-bottom: 3px;
                 border-bottom: 1px dotted #d8d8d8;
                 width: fit-content;
             }
 
             .post-user_image{
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-               
+                margin: 10px 0 0;
+                width: 20%;
             }
 
             .post-img{
@@ -686,6 +757,16 @@ img{
 
             .brand{
                 font-size: .8rem;
+                margin-left: 3%;
+            }
+
+            .nav-list{
+                margin-right: 3%;
+                font-size: .8rem;
+            }
+
+            .nav-list li{
+                padding-right: 16px;
             }
 
             #header{
@@ -696,17 +777,18 @@ img{
                 text-align: start;
                 padding-left: 0;
                 padding-top: 0;
+                padding-bottom: 0;
             }
 
             #header img{
                 margin-bottom: 5%;
                 padding-top: 2%;
+                width: 80%;
             }
 
             #header h1{
                 font-size: 2.5rem;
                 line-height: 1.2;
-                font-weight: bold;
                 margin-bottom: 5%;
             }
 
@@ -728,17 +810,19 @@ img{
 
             .post-header{
                 text-align: start;
-                margin-top: 1%;
-                margin-bottom: 4%;
+                padding-left: 7%;
+                margin: 5% 0;
+                
             }
 
             .post-header h2{
-                font-size: 2rem;
+                font-size: 1.5rem;
                 margin-left: 0;
             }
 
             .post-header p{
                 font-size: .8rem;
+                margin-bottom: 4%;
             }
 
         /* Cards */
@@ -784,11 +868,32 @@ img{
                 margin-top: 9%;
             }
 
+            #about h2{
+                margin-bottom: 8%;
+                font-size: 1rem;
+            }
+
+            #about p{
+                line-height: 2;
+            }
+
+            #about .btn{
+                margin: 12% 0;
+                padding: 6% 10%;
+            }
+
         /* Rodapé */
 
             #footer{
                 grid-column: 1 / 5;
                 grid-row: 6 / 7;
                 margin-left: 29%;
+                margin-top: 8%;
+            }
+
+
+            #footer ul li{
+                margin-right: 8px;
+                margin-bottom: 5%;
             }
     }
