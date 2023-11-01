@@ -315,11 +315,11 @@ img{
         }
 
         .card img:nth-child(1){
-            transition: all .5s;
+            transition: all 1s;
         }
 
         .card img:nth-child(1):hover{
-            transform: scale(1.03);
+            transform: scale(1.02);
         }
 
         .card-info{
@@ -556,6 +556,11 @@ img{
             .post-img{
                 padding: 7%;
                 box-sizing: border-box;
+                transition: opacity .5s;
+            }
+
+            .post-img:hover{
+                opacity: .8;
             }
 
             .post-text{
