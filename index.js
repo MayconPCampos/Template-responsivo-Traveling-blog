@@ -19,3 +19,19 @@ const toggleMobile = () => {
         document.querySelector(".nav-list-mobile ul").classList.remove("not-visible")
     }
 }
+
+const startEffects = () => {
+
+    //fade in
+    document.getElementById("main-container").classList.remove("is-loading");
+
+    //para rotacionar logo da página
+    document.querySelector("#header img").classList.remove("is-spining");
+
+    //fade in título
+    document.querySelector("#header h1").classList.remove("is-loading");
+    document.querySelector("#header p").classList.remove("is-loading");
+
+}
+
+startEffects();
