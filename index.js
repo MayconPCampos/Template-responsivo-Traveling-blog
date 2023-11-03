@@ -1,3 +1,4 @@
+// usa a classe "expand" no html para mostrar e esconder o monu mobile
 const toggleMobile = () => {
     
     const navLinks = document.querySelector(".nav-list-mobile ul");
@@ -10,7 +11,7 @@ const toggleMobile = () => {
     
     navMobile.classList.toggle("expand");
 
-    //verifica a classe atual e se estiver expandida esconde o conteúdo
+    //verifica a existência da classe para chamar função que esconde o menu
     if (!navMobile.classList.contains("expand")){
         setTimeout(() => hideMenu(),500);
       
@@ -20,7 +21,11 @@ const toggleMobile = () => {
     }
 }
 
-const startEffects = () => {
+document.querySelector(".nav-list-mobile img").addEventListener("click", () => toggleMobile());
+document.querySelector(".menu-bar").addEventListener("click", () => toggleMobile());
+
+//remove classes para gerar os efeitos ao carregar a página
+const animateScreen = () => {
 
     //fade in
     document.getElementById("main-container").classList.remove("is-loading");
@@ -33,5 +38,4 @@ const startEffects = () => {
     document.querySelector("#header p").classList.remove("is-loading");
 
 }
-
-startEffects();
+animateScreen();
